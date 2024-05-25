@@ -1,8 +1,10 @@
-import os
 from pytube import YouTube
 from moviepy.editor import AudioFileClip
 
+import os
+
 def y_song_to_mp3(url: str) -> None:
+    
     yt = YouTube(url)
     video_stream = yt.streams.first()
 

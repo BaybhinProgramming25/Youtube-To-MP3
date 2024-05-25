@@ -1,8 +1,10 @@
-import os
 from pytube import YouTube, Playlist
 from moviepy.editor import AudioFileClip
 
-def y_song_to_mp3(url: str) -> None:
+import os
+
+def y_playlist_to_mp3(url: str) -> None:
+    
     playlist = Playlist(url)
 
     for url in playlist.video_urls:
