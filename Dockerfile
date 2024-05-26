@@ -1,8 +1,7 @@
 FROM python:3.8
 
-# Install ffmpeg as well 
-RUN apt-get update && \
-    apt-get install -y ffmpeg
+# Run apt-get update
+RUN apt-get update
 
 # Create converter directory
 WORKDIR /converter
