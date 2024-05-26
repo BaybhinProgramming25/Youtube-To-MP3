@@ -18,7 +18,7 @@ source env/bin/activate
 
 Note that if you wish to run the program through docker, then you would need to download docker on your system. 
 
-Go to the scripts directory and run the docker script
+Go to the scripts directory and run the docker script:
 
 ```
 chmod +x docker-install.sh
