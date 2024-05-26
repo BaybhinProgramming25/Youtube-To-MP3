@@ -20,7 +20,6 @@ docker run -it -v /path/to/output/folder:/converter/output converter-app
 You will now have access to the CLI interface and able to perform various options. 
 
 
-If you wish to run the program without docker, then ensure you have the following installed: 
 
 
 # Extra Features 
