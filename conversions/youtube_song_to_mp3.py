@@ -19,17 +19,13 @@ def y_song_to_mp3(url: str) -> None:
 
     audio = AudioFileClip(download_path)
 
-    # Get the title of the YouTube video and use it as the filename for the MP3 file
-    title = yt.title
-    safe_title = "".join([c for c in title if c.isalpha() or c.isdigit() or c==' ']).rstrip()
-
     # Create the output directory if it doesn't exist
     output_dir = os.path.join(os.getcwd(), 'output')
     os.makedirs(output_dir, exist_ok=True)
 
     # Save the MP3 file in the output directory
-    mp3_filename = os.path.join(output_dir, f"{safe_title}.mp3")
+    mp3_filename = os.path.join(output_dir, f"{yt.title}.mp3")
     audio.write_audiofile(mp3_filename)
 
-    # Delete the mp4 file 
-    os.remove(download_path)
+    # Delete the mp4 file that was used to create the mp3 file 
+    os.remove(download_path) 

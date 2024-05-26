@@ -10,7 +10,17 @@ The premise of this small project is to convert youtube songs/playlists into mp3
 
 # How to run the program 
 
+The best way to run this program is through docker:
 
+```
+docker build -t converter-app . 
+docker run -it -v /path/to/output/folder:/converter/output converter-app
+```
+
+You will now have access to the CLI interface and able to perform various options. 
+
+
+If you wish to run the program without docker, then ensure you have the following installed: 
 
 
 # Extra Features 
