@@ -14,6 +14,17 @@ python3 -m venv env
 source env/bin/activate
 ```
 
+# Installation 
+
+Note that if you wish to run the program through docker, then you would need to download docker on your system. 
+
+Go to the scripts directory and run the docker script
+
+```
+chmod +x docker-install.sh
+./docker-install.sh
+```
+
 
 # How to run the program 
 
@@ -35,15 +46,3 @@ docker run -it -v /path/to/output/folder:/converter/output converter-app
 ```
 
 You will now have access to the CLI interface and able to perform any of the listed options. 
-
-
-# Disclaimer 
-
-Note that if you wish to run the program through docker, then you would need to download docker on your system. 
-
-Go to the scripts directory and run the docker script
-
-```
-chmod +x docker-install.sh
-./docker-install.sh
-```
